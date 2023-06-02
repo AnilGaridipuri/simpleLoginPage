@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 10px;
+
+  .loginImg {
+    flex: 1;
+    position: relative;
+
+    img {
+      min-height: 95vh;
+      width: 100%;
+    }
+
+    .loginImgInfo {
+      position: absolute;
+      top: 0;
+      padding: 20px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      align-items: flex-start;
+
+      .topIcons {
+        display: flex;
+        align-items: center;
+        svg {
+          color: #fff;
+        }
+      }
+
+      .carousel {
+        width: 100%;
+        margin-top: 250px;
+
+        .pagination {
+          display: flex;
+          gap: 5px;
+          margin-left: 15px;
+
+          .pagination-button {
+            width: 4.87px;
+            height: 5.49px;
+            background: rgba(255, 255, 255, 0.31);
+            border-radius: 74.4249px;
+            transform: rotate(180deg);
+
+            &.active {
+              width: 20px;
+              height: 6px;
+              background: #ffffff;
+              border-radius: 74.4249px;
+              transform: rotate(180deg);
+            }
+          }
+        }
+
+        .curouselText {
+          p {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 600;
+          }
+          span {
+            color: #bfbfbf;
+            font-size: 30px;
+          }
+        }
+      }
+
+      .contactUs {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .email {
+          color: #bfbfbf;
+          font-family: "Poppins";
+
+          svg {
+            color: #bfbfbf;
+          }
+
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .loginInputs {
+    flex: 1;
+
+    .loginBody {
+      display: grid;
+      place-content: center;
+      gap: 30px;
+      justify-items: center;
+
+      .inputHeader {
+        display: grid;
+        justify-items: center;
+
+        .title {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 34px;
+          line-height: 130%;
+          text-align: center;
+          text-transform: capitalize;
+          color: #020100;
+        }
+        .secondWord {
+          color: #08a593;
+        }
+
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #667085;
+        }
+      }
+
+      form {
+        display: grid;
+        gap: 20px;
+
+        input {
+          outline: none;
+          border: none;
+        }
+
+        .input {
+          width: 360px;
+          height: 49px;
+          opacity: 0.45;
+          border: 2px solid #464660;
+          border-radius: 10px;
+          padding: 0px 10px;
+        }
+
+        .invalidInput {
+          width: 360px;
+          height: 49px;
+          opacity: 0.45;
+          border: 2px solid #ff0000;
+          border-radius: 10px;
+          padding: 0px 10px;
+        }
+
+        .password {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0px 10px;
+          width: 360px;
+          height: 49px;
+          opacity: 0.45;
+          border: 2px solid #464660;
+          border-radius: 10px;
+          outline: none;
+        }
+
+        .forgotPassword {
+          text-align: right;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          color: #667085;
+        }
+
+        button {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          gap: 10px;
+          width: 360px;
+          height: 53px;
+          background: #020100;
+          box-shadow: 0px 20px 32px rgba(2, 1, 0, 0.42);
+          border-radius: 10px;
+          color: #fff;
+        }
+
+        .hint {
+          text-align: center;
+          padding-top: 90px;
+          font-size: 14px;
+          color: #667085;
+
+          .secondWord{
+            color: #08a593;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  justify-content: center;
+
+  .loginBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    width: 360px;
+    height: 53px;
+    background: #020100;
+    box-shadow: 0px 20px 32px rgba(2, 1, 0, 0.42);
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .inputHeader {
+        display: grid;
+        justify-items: center;
+
+        .title {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 34px;
+          line-height: 130%;
+          text-align: center;
+          text-transform: capitalize;
+          color: #020100;
+        }
+        .secondWord {
+          color: #08a593;
+        }
+
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #667085;
+        }
+      }
+}
+
+.iMqSPA .kbleDV{
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  gap: 15px;
+}
+
+.eyoHU .bUTvAQ{
+  display: block !important;
+}
+

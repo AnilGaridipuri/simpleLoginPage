@@ -12,15 +12,30 @@ code {
     monospace;
 }
 
+@mixin tablet {
+  @media screen and (max-width: 780px) {
+    @content;
+  }
+}
+
 .login {
   display: flex;
   align-items: center;
   padding: 20px 10px;
   gap: 10px;
 
+  @include tablet(){
+    height: 100vh;
+  }
+
   .loginImg {
     flex: 1;
     position: relative;
+
+    @include tablet(){
+      display: none;
+      flex: 0;
+    }
 
     img {
       min-height: 95vh;
